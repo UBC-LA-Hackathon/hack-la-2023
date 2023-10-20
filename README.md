@@ -2,7 +2,7 @@
 Register here: https://events.ctlt.ubc.ca/events/2023-fall-learning-analytics-hackathon/
 
 # Welcome!
-Welcome to the #hack-la-2023 github repository. Please fork this repo and share your project back with us. In this repo you should find
+Welcome to the #hack-la-2023 github repository. Please [fork this repo](https://docs.github.com/en/get-started/quickstart/fork-a-repo) and share your project back with us. In this repo you should find
 
 * a data dictionary
 * a data sample (full data is available to registrants through the Canvas course)
