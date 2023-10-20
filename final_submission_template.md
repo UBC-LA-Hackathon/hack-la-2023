@@ -1,11 +1,12 @@
 # I Hacked-LA-2023
-- "submit" your work by creating a branch with a name formatted like `hacked-la-2023_{your team name}`
-  
+- "submit" your work by creating a pull request as detailed in the README.md.
+
+List your group members:
 > Your Group Members
 
 # This Project
 > Link to presentation: 
-> Give a brief description of the final product. 
+> Give a brief description of the final product:
 
 # Reflection
 ## Approach
