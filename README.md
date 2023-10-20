@@ -3,17 +3,6 @@ Welcome to the #hack-la-2023 github repository.
 
 Please register for the hackathon if you haven't ready done so: https://events.ctlt.ubc.ca/events/2023-fall-learning-analytics-hackathon/
 
-## 📚 What You'll Learn
-By completing this workshopathon, you'll learn to:
-* use the [Canvas API](https://canvas.instructure.com/doc/api/)
-* use the [Canvas Live Events data](https://canvas.instructure.com/doc/api/file.data_service_introduction.html)
-* explore the data that [Canvas collects from you](https://learninganalytics.ubc.ca/ethics-policy/students-learning-analytics-and-privacy/)
-* [clean data](https://www.sisense.com/glossary/data-cleaning/)
-* contribute to [open source projects](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) (like this hackathon!)
-* apply data analytics and programming skills
-* work in a team
-* build cool stuff!
-
 ## 📅 Schedule
 ### Saturday Nov 4th
 * 9:00am - Start hacking! (Coffee and light refreshments provided)
@@ -25,15 +14,26 @@ By completing this workshopathon, you'll learn to:
 ## 🔨 What You'll Build
 [Tuum Est](http://100.ubc.ca/timeline/the-ubc-motto-and-crest-are-created/)
 
+## 📚 What You'll Learn
+By participating in this hackathon, you'll learn to:
+* use the [Canvas API](https://canvas.instructure.com/doc/api/)
+* use the [Canvas Live Events data](https://canvas.instructure.com/doc/api/file.data_service_introduction.html)
+* explore the data that [Canvas collects from you](https://learninganalytics.ubc.ca/ethics-policy/students-learning-analytics-and-privacy/)
+* [clean data](https://www.sisense.com/glossary/data-cleaning/)
+* contribute to [open source projects](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) (like this hackathon!)
+* apply data analytics and programming skills
+* work in a team
+* build cool stuff!
+
 ## 🤔 Ask For Help
 Please ask the volunteers and your peers for help. We're all here to learn together!
 
 ## ⚙️ Getting Started
 These instructions will get you a copy of the project up and running on your local machine for use with your own Canvas API tokens.
 
-TODO: add link to quiz to request Canvas events data and add this data to the data folder
+- TODO: add link to quiz to request Canvas events data and add this data to the data folder
 - review [data_dictionary](./data_dictionary.md)
-TODO: add starter kits (Jupyter notebook?)
+- TODO: add starter kits (Jupyter notebook?)
 - create a folder in the root of this repo 
 
 ### Prerequisites
