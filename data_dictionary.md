@@ -60,7 +60,7 @@ actor_id | string |
 
 In Canvas, content can be organized into Modules which contain module items. Module items can be pages, files, assignments, quizzes, discussion forums etc. Module items can be published/unpublished, if they are assignments they can have due dates, and if they are pages/files they can have to-do dates. Modules can be organized in any way, could have requirements and/or pre-requisites and may be published/unpublished.
 
-![module and items](imgs/modules_instructor_view.png)
+![module and items](_imgs/modules_instructor_view.png)
 
 
 ### Field Descriptions
@@ -76,7 +76,7 @@ Assignments are any sort of assessible content in Canvas - this may include an A
 
 > For the purposes of the hackathon, assume that all Assignments are
 
-![assignments](imgs/assignments_instructor_view.png)
+![assignments](_imgs/assignments_instructor_view.png)
 
 ### Field Descriptions
 
@@ -100,7 +100,7 @@ Field | Type | Description | Note
 - File: additional/discussion_topics.csv
 - Official Information: https://canvas.instructure.com/doc/api/discussion_topics.html
 
-![discussions](imgs/discussion_topics_instructor_view.png)
+![discussions](_imgs/discussion_topics_instructor_view.png)
 
 ### Field Descriptions
 
@@ -144,7 +144,7 @@ count_of_likes | float | The number of upvotes (likes) that a post received
 
 Instructors can include files in their Canvas courses. These files can become module items, or remain in the "Files" area. Files are associated with individual courses. Files can be embedded in Canvas pages, images included in pages or in the course header are considered files.
 
-![files](imgs/files_instructor_view.png)
+![files](_imgs/files_instructor_view.png)
 
 ### Field Descriptions
 
@@ -165,7 +165,7 @@ category | |
 
 Most Canvas content takes the form of pages (and files). Like other Canvas content, this can be found in the navigation Pages (when allowed by instructors) or included as a module item.
 
-![pages](imgs/pages_instructor_view.png)
+![pages](_imgs/pages_instructor_view.png)
 
 ### Field Descriptions
 
