@@ -33,7 +33,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 - TODO: add link to quiz to request Canvas events data and add this data to the data folder
 - review [data_dictionary](./data_dictionary.md)
-- TODO: add git commit hook to clear notebook contents
 
 ### Prerequisites
 1. **Install [Git](https://git-scm.com/downloads)**.
