@@ -50,7 +50,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone repo. `git clone {paste URL you copied}`
 1. Navigate into repo. `cd hack-la-203`
 1. Rename the `src_rename_me` folder with your group name. All of your work should be contained inside this folder to reduce the likelihood of merge conflicts when you submit your work later. 
-1. Download your events data from the Canvas quiz and place under the `data` folder. Anything that is contained in this folder is gitignored. 
+1. Download your events data from the Canvas quiz and place under the `data` folder, and rename the file as `events.csv`. Anything that is contained in this folder is gitignored.
 1. [Optional] Run the `starter.ipynb`file.
 1. Start hacking!
 
