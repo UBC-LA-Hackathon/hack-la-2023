@@ -29,11 +29,6 @@ By participating in this hackathon, you'll learn to:
 Please ask the volunteers and your peers for help. We're all here to learn together!
 
 ## ⚙️ Getting Started
-These instructions will get you a copy of the project up and running on your local machine for use with your own Canvas API tokens.
-
-- TODO: add link to quiz to request Canvas events data and add this data to the data folder
-- review [data_dictionary](./data_dictionary.md)
-
 ### Prerequisites
 1. **Install [Git](https://git-scm.com/downloads)**.
 1. **Install [Python](https://www.python.org/)** (if you want to use our [starter kit](./starter_kit/starter.ipynb)).
