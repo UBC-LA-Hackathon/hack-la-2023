@@ -49,9 +49,13 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone repo. `git clone {paste URL you copied}`
 1. Navigate into repo. `cd hack-la-203`
 1. Rename the `rename_me` folder with your group name. All of your work should be contained inside this folder to reduce the likelihood of merge conflicts when you submit your work later. 
-1. Download your events data from the Canvas quiz and place under the `data` folder, and rename the file as `events.csv`. Anything that is contained in this folder is gitignored.
+1. Download your events data from the Canvas quiz and place under the `{group_name}/data` folder, and rename the file as `events.csv`. Anything that is contained in this folder is gitignored.
 1. [Optional] Run the `starter.ipynb`file.
 1. Start hacking!
+
+### Git and Jupyter
+1. Note that if you're using Jupyter Notebooks, the output cells that contain potentially sensitive data are saved and can accidentally be added, committed, and pushed to Github. Please take care to **clear your cells** before adding and committing your Notebooks. 
+1. VSCode has the ability to [clear all outputs](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_clear-output-or-restartinterrupt-the-kernel) in a Jupyter notebook.
 
 ### Final Submission
 1. Update the `final_submission_template.md` that is inside your group's folder. 
@@ -63,3 +67,4 @@ These instructions will get you a copy of the project up and running on your loc
 - [Python Canvas API Starter Kit](https://github.com/ubc/getting-started-with-the-canvas-api-with-python)
 - [NodeJS Canvas API Starter Kit](https://github.com/ubc/getting-started-with-the-canvas-api-with-node)
 - [Canvas API Documentation](https://canvas.instructure.com/doc/api/)
+- [Canvas API Live](https://canvas.ubc.ca/doc/api/live#!/)
