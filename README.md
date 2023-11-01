@@ -31,8 +31,8 @@ Please ask the volunteers and your peers for help. We're all here to learn toget
 ## ⚙️ Getting Started
 ### Prerequisites
 1. **Install [Git](https://git-scm.com/downloads)**.
-1. **Install [Python](https://www.python.org/)** (if you want to use our [starter kit](./starter_kit/starter.ipynb)).
-1. **Install [Jupyter notebooks](https://jupyter.org/install)** (if you want to use our [starter kit](./starter_kit/starter.ipynb)).
+1. **Install [Python](https://www.python.org/)** (if you want to use our [starter kit](./rename_me/starter.ipynb)).
+1. **Install [Jupyter notebooks](https://jupyter.org/install)** (if you want to use our [starter kit](./rename_me/starter.ipynb)).
 1. **Install [Visual Studio Code](https://code.visualstudio.com/)** (optional but recommended).
 
 ### Cloning and setup
