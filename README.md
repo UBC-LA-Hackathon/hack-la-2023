@@ -16,6 +16,7 @@ Please **[register](https://events.ctlt.ubc.ca/events/2023-fall-learning-analyti
 
 ## 📚 What You'll Learn
 By participating in this hackathon, you'll learn to:
+
 * use the [Canvas API](https://canvas.instructure.com/doc/api/)
 * use the [Canvas Live Events data](https://canvas.instructure.com/doc/api/file.data_service_introduction.html)
 * explore the data that [Canvas collects from you](https://learninganalytics.ubc.ca/ethics-policy/students-learning-analytics-and-privacy/)
