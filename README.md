@@ -1,7 +1,7 @@
 # 2023 Fall Learning Analytics Hackathon
 Welcome to the #hack-la-2023 github repository.
 
-Please register for the hackathon if you haven't ready done so: https://events.ctlt.ubc.ca/events/2023-fall-learning-analytics-hackathon/
+Please **[register](https://events.ctlt.ubc.ca/events/2023-fall-learning-analytics-hackathon/)** for the hackathon if you haven't ready done so.
 
 ## 📅 Schedule
 ### Saturday Nov 4th
