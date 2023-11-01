@@ -42,7 +42,7 @@ Please ask the volunteers and your peers for help. We're all here to learn toget
 ![clone](./_imgs/clone.png)
 1. Open terminal on Mac or command line on Windows. We like to use [VSCode's integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal), as it works for both Mac and PC.
 1. Clone repo. `git clone {paste URL you copied}`
-1. Navigate into repo. `cd hack-la-203`
+1. Navigate into repo. `cd hack-la-2023`
 1. Rename the `rename_me` folder with your group name. All of your work should be contained inside this folder to reduce the likelihood of merge conflicts when you submit your work later. 
 1. Download your events data from the Canvas quiz and place under the `{group_name}/data` folder, and rename the file as `events.csv`. Anything that is contained in this folder is gitignored.
 1. [Optional] Run the `starter.ipynb`file.
