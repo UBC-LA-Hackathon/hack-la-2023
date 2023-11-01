@@ -1,7 +1,7 @@
 # 2023 Fall Learning Analytics Hackathon
 Welcome to the #hack-la-2023 github repository.
 
-Please register for the hackathon if you haven't ready done so: https://events.ctlt.ubc.ca/events/2023-fall-learning-analytics-hackathon/
+Please **[register](https://events.ctlt.ubc.ca/events/2023-fall-learning-analytics-hackathon/)** for the hackathon if you haven't ready done so.
 
 ## 📅 Schedule
 ### Saturday Nov 4th
@@ -16,6 +16,7 @@ Please register for the hackathon if you haven't ready done so: https://events.c
 
 ## 📚 What You'll Learn
 By participating in this hackathon, you'll learn to:
+
 * use the [Canvas API](https://canvas.instructure.com/doc/api/)
 * use the [Canvas Live Events data](https://canvas.instructure.com/doc/api/file.data_service_introduction.html)
 * explore the data that [Canvas collects from you](https://learninganalytics.ubc.ca/ethics-policy/students-learning-analytics-and-privacy/)
@@ -30,8 +31,8 @@ Please ask the volunteers and your peers for help. We're all here to learn toget
 ## ⚙️ Getting Started
 ### Prerequisites
 1. **Install [Git](https://git-scm.com/downloads)**.
-1. **Install [Python](https://www.python.org/)** (if you want to use our [starter kit](./starter_kit/starter.ipynb)).
-1. **Install [Jupyter notebooks](https://jupyter.org/install)** (if you want to use our [starter kit](./starter_kit/starter.ipynb)).
+1. **Install [Python](https://www.python.org/)** (if you want to use our [starter kit](./rename_me/starter.ipynb)).
+1. **Install [Jupyter notebooks](https://jupyter.org/install)** (if you want to use our [starter kit](./rename_me/starter.ipynb)).
 1. **Install [Visual Studio Code](https://code.visualstudio.com/)** (optional but recommended).
 
 ### Cloning and setup
@@ -41,7 +42,7 @@ Please ask the volunteers and your peers for help. We're all here to learn toget
 ![clone](./_imgs/clone.png)
 1. Open terminal on Mac or command line on Windows. We like to use [VSCode's integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal), as it works for both Mac and PC.
 1. Clone repo. `git clone {paste URL you copied}`
-1. Navigate into repo. `cd hack-la-203`
+1. Navigate into repo. `cd hack-la-2023`
 1. Rename the `rename_me` folder with your group name. All of your work should be contained inside this folder to reduce the likelihood of merge conflicts when you submit your work later. 
 1. Download your events data from the Canvas quiz and place under the `{group_name}/data` folder, and rename the file as `events.csv`. Anything that is contained in this folder is gitignored.
 1. [Optional] Run the `starter.ipynb`file.
