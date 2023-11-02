@@ -28,31 +28,31 @@ More about the Caliper information model: https://www.imsglobal.org/spec/caliper
 
 > 🧐 Stuck on your hackathon idea? Help us build the data dictionary! Submit a pull request from a branch named `dictionary_update_{TEAMNAME}`. This shouldn't just by a replication of the Caliper dictionaries above - but should provide more meaningful Descriptions and Notes.
 
-Field | Type | Description | Note
----------|----------|---------|---------
+Field | Description | Note
+---------|---------|---------
+id | 
 type |
-action
-event_time |
-session_id |
+action |
+event_time | The time the event occurred (UTC)
+ed_app | empty in anonymized data
+course_offering_id | 
+session_id | 
+statement_type |
+statement_version |
+object_id | This is the unique identifer for each object, and should relate to each event__object_extensions_asset_name. | This should act as your join key, where possible to the additional datasets for the anonymized data.
 membership_role |
-membership_type |
-event__id |
-event__type |
-event__actor_type |
-event__action |
+actor_id | For the anonymized data we use actor_id in replace of event__actor_extensions_user_did_id
 event__object_type |
 event__object_name |
+event__object_extensions_asset_name |
 event__object_extensions_asset_type |
-event__object_extensions_http_method
-event__eventTime
-event__edApp_type
-event__session_type
-object_id_type
-event__object_id_type
-event__attachment_type
-object_id | string | This is the unique identifer for each object, and should relate to each event__object_extensions_asset_name. | This should act as your join key, where possible to the additional datasets
-event__object_extensions_asset_name | string | The specific asset that was navigated to. | Should refer to Canvas assets - assignments, discussions, module_items, pages etc. 
-actor_id | string | 
+event__object_extensions_asset_subtype | empty in anonymized data
+event__object_extensions_entity_id | empty in anonymized datay
+event__object_extensions_http_method |
+event__referrer | empty in anonymized data
+event__request_id | empty in anonymized data
+event__request_url | empty in anonymized data
+event__attachment_type | only in anonymized data, extracted attachment type if event__object_name is "attachment"
 
 ## Module Items
 - File: additional/module_items.csv
