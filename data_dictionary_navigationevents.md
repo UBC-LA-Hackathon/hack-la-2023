@@ -32,6 +32,8 @@ Fields that start with event__ are parsed from an event object. See more: https:
 
 Field | Description | Note
 ---------|---------|---------
+canvas_user_id | Your Canvas user id!
+name | Your name (as it appears in Canvas)
 id | 
 type |
 action |
@@ -43,7 +45,6 @@ statement_type |
 statement_version |
 object_id | This is the unique identifer for each object, and should relate to each event__object_extensions_asset_name. | This should act as your join key, where possible to the additional datasets
 membership_role |
-event__actor_extensions_user_sis_id | Your SIS ID
 event__object_type |
 event__object_name |
 event__object_extensions_asset_name |
