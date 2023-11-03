@@ -7,6 +7,7 @@ Please **[register](https://events.ctlt.ubc.ca/events/2023-fall-learning-analyti
 ### Saturday Nov 4th
 * 9:00am - Start hacking! (Coffee and light refreshments provided)
 * 12ish Lunch (provided)
+* 2pm Check-In (maybe! look out for Canvas announcement!)
 * 5ish Dinner (provided)
 * 6ish Presentations Start
 * 8ish End of Hackathon!
