@@ -34,7 +34,7 @@ Field | Description | Note
 ---------|---------|---------
 canvas_user_id | Your Canvas user id!
 name | Your name (as it appears in Canvas)
-id | 
+id | UUID
 type |
 action |
 event_time | The time the event occurred (UTC)
