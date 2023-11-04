@@ -42,7 +42,7 @@ statement_version |
 object_id | This is the unique identifer for each object, and should relate to each event__object_extensions_asset_name. | This should act as your join key, where possible to the additional datasets for the anonymized data.
 membership_role |
 actor_id | For the anonymized data we use actor_id in replace of event__actor_extensions_user_did_id
-event__object_type |
+event__object_type | 
 event__object_name |
 event__object_extensions_asset_name |
 event__object_extensions_asset_type |
