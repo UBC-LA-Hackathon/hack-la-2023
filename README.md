@@ -7,6 +7,7 @@ Please **[register](https://events.ctlt.ubc.ca/events/2023-fall-learning-analyti
 ### Saturday Nov 4th
 * 9:00am - Start hacking! (Coffee and light refreshments provided)
 * 12ish Lunch (provided)
+* 2pm Check-In (maybe! look out for Canvas announcement!)
 * 5ish Dinner (provided)
 * 6ish Presentations Start
 * 8ish End of Hackathon!
@@ -48,7 +49,7 @@ Please ask the volunteers and your peers for help. We're all here to learn toget
 1. [Optional] Run the `starter.ipynb`file.
 1. Start hacking!
 
-### Git and Jupyter
+### Git and Jupyter ⚠️
 1. Note that if you're using Jupyter Notebooks, the output cells that contain potentially sensitive data are saved and can accidentally be added, committed, and pushed to Github. Please take care to **clear your cells** before adding and committing your Notebooks. 
 1. VSCode has the ability to [clear all outputs](https://code.visualstudio.com/docs/datascience/jupyter-notebooks#_clear-output-or-restartinterrupt-the-kernel) in a Jupyter notebook.
 
