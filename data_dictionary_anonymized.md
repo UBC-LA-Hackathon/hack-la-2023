@@ -30,7 +30,7 @@ More about the Caliper information model: https://www.imsglobal.org/spec/caliper
 
 Field | Type | Description | Note
 ---------|----------|---------|---------
-type |
+type | definition here
 action
 event_time |
 session_id |
