@@ -119,16 +119,12 @@ List your group members:
 >plt.xticks(rotation=45)
 >plt.grid(True)
 
->## Display the graph
 >plt.tight_layout()
 >plt.show()
 
 >import datetime
-
-># Group the events by day and count the number of events per day
 >daily_discussion = df_discussion['timestamp'].dt.date.value_counts().sort_index()
 
-># Create a line graph
 >plt.figure(figsize=(10, 6))
 >plt.plot(daily_discussion.index, daily_discussion.values, marker='o', linestyle='-')
 >plt.title('Discussions per Day')
@@ -147,7 +143,6 @@ List your group members:
 >plt.axvline(x=vertical_line_date, color='red', linestyle='--', label='Vertical Line')
 
 
-># Display the graph
 >plt.tight_layout()
 
 >plt.savefig('discussions per day')
@@ -155,23 +150,18 @@ List your group members:
 
 >df_grade[['Assignment 1 Current Score','Assignment 2 Current Score','Assignment 3 Current Score','Participation & engagement Current Score','Current Score']].corr()
 
-># Basic descriptive statistics
 >print(df_discussion[['discussion_topic_message_length', 'post_message_length']].describe())
 
 >df_discussion
 
-># Count of posts by actor
 >posts_by_actor = df_discussion['actor_id'].value_counts()
 >print(posts_by_actor.head())
 
-># Sum of likes by actor
 >likes_by_actor = df_discussion.groupby('actor_id')['count_of_likes'].sum()
 >print(likes_by_actor.sort_values(ascending=False).head())
 
-># Convert 'timestamp' to datetime
 >df_discussion['timestamp'] = pd.to_datetime(df_discussion['timestamp'])
 
-># Set 'timestamp' as index
 >df_discussion.set_index('timestamp', inplace=True)
 
 >monthly_posts = df_discussion['post_id'].resample('M').count()
@@ -180,29 +170,23 @@ List your group members:
 >## Sort the counts in descending order to find the most discussed topics
 >popular_topics_with_titles = topic_counts.sort_values(ascending=False)
 
->## Display the top 5 most discussed topics with titles
 >print(popular_topics_with_titles.head())
 
->## Average post message length by membership role
 >avg_length_by_role = df_discussion.groupby('membership_role')['post_message_length'].mean()
 >print(avg_length_by_role)
 
 >import seaborn as sns
 >import matplotlib.pyplot as plt
 
->## new column for the hour of the day and the day of the week
 >df_discussion['hour'] = df_discussion.index.hour
 >df_discussion['day_of_week'] = df_discussion.index.day_name()
 
->## for the heatmap; count the number of posts in each hour for each day
 >activity_matrix = df_discussion.groupby(['day_of_week', 'hour']).size().unstack(fill_value=0)
 
->## Order the days of the week starting from Monday
 >ordered_days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 >activity_matrix = activity_matrix.reindex(ordered_days)
 
->## Plot the heatmap
->plt.figure(figsize=(12, 7))  # You can adjust the size as needed
++>plt.figure(figsize=(12, 7))  # You can adjust the size as needed
 >sns.heatmap(activity_matrix, cmap='viridis', linewidths=.5, annot=True)
 
 >## Add labels and a title
