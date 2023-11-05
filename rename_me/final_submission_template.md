@@ -20,6 +20,6 @@ List your group members:
 ## Wins / Challenges<br>
 > Describe some wins / challenges. What did you learn? What would you do differently next time?
 > Wins: What we have found is more or less what we expected.
-> Challenges: The data is samll and not perfect, so it is challenging to clean the data, find connections between datasets, and find insights at the beginning.
+> Challenges: The datasets are small and not perfect, so it is challenging to clean the data, find connections between datasets, and find insights at the beginning.
 
 
