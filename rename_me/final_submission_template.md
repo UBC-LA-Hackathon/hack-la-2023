@@ -9,7 +9,7 @@ List your group members:
 > Give a brief description of the final product:
 >  There are some findings we have obtained.
 >  1. On average, if students spend more time on Canvas, they are likelier to get a higher score. But it is not a guaranty for a ggod grade, inefficiency is also an essential element.
->  2. Users are most active in the latter part of the day, from Sundays to Thursdays, but on Fridays, te activity is the lowest in a week. The suggestion for the professor would be to release materials on days that students are active.
+>  2. Users are most active in the latter part of the day, from Sundays to Thursdays, but on Fridays, the activity is the lowest in a week. The suggestion for the professor would be to release materials on days that students are active.
 >  3. A word cloud representing data discussion forums illustrates the frequency of specific terms. Topics including discussion, assignment and elearning are on the top.
 
 # Reflection
