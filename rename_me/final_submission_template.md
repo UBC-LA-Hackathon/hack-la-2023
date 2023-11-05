@@ -104,23 +104,13 @@ List your group members:
 >plt.ylabel('Total Activity Time')
 >plt.title('Total Activity Time by Grade')
 >plt.savefig('Grade vs Time')
-
-># Show the plot
 >plt.show()
-
-># Summary statistics of the data
->summary_statistics = df_grade.describe()
->summary_statistics
-
-># Visualize the data
 >df_events['event_time'] = pd.to_datetime(df_events['event_time'],format='mixed')
-
 >df_events['event_time'][1]
-
-># Group the events by day and count the number of events per day
+>## Group the events by day and count the number of events per day
 >daily_events = df_events['event_time'].dt.date.value_counts().sort_index()
 
-># Create a line graph
+>## Create a line graph
 >plt.figure(figsize=(10, 6))
 >plt.plot(daily_events.index, daily_events.values, marker='o', linestyle='-')
 >plt.title('Events per Day')
@@ -129,7 +119,7 @@ List your group members:
 >plt.xticks(rotation=45)
 >plt.grid(True)
 
-># Display the graph
+>## Display the graph
 >plt.tight_layout()
 >plt.show()
 
@@ -184,50 +174,45 @@ List your group members:
 ># Set 'timestamp' as index
 >df_discussion.set_index('timestamp', inplace=True)
 
-># Resample to get monthly counts of posts
 >monthly_posts = df_discussion['post_id'].resample('M').count()
-># monthly post counts
 >print(monthly_posts)
-
-># Group by 'discussion_topic_id' and 'discussion_topic_title' and count the number of posts for each group
 >topic_counts = df_discussion.groupby(['discussion_topic_id', 'discussion_topic_title']).size()
-
-># Sort the counts in descending order to find the most discussed topics
+>## Sort the counts in descending order to find the most discussed topics
 >popular_topics_with_titles = topic_counts.sort_values(ascending=False)
 
-># Display the top 5 most discussed topics with titles
+>## Display the top 5 most discussed topics with titles
 >print(popular_topics_with_titles.head())
 
-># Average post message length by membership role
+>## Average post message length by membership role
 >avg_length_by_role = df_discussion.groupby('membership_role')['post_message_length'].mean()
 >print(avg_length_by_role)
 
 >import seaborn as sns
 >import matplotlib.pyplot as plt
 
-># new column for the hour of the day and the day of the week
+>## new column for the hour of the day and the day of the week
 >df_discussion['hour'] = df_discussion.index.hour
 >df_discussion['day_of_week'] = df_discussion.index.day_name()
 
-># for the heatmap; count the number of posts in each hour for each day
+>## for the heatmap; count the number of posts in each hour for each day
 >activity_matrix = df_discussion.groupby(['day_of_week', 'hour']).size().unstack(fill_value=0)
 
-># Order the days of the week starting from Monday
+>## Order the days of the week starting from Monday
 >ordered_days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 >activity_matrix = activity_matrix.reindex(ordered_days)
 
-># Plot the heatmap
+>## Plot the heatmap
 >plt.figure(figsize=(12, 7))  # You can adjust the size as needed
 >sns.heatmap(activity_matrix, cmap='viridis', linewidths=.5, annot=True)
 
-># Add labels and a title
+>## Add labels and a title
 >plt.title('Activity Heatmap (Posts per Day and Hour)')
 >plt.xlabel('Hour of the Day')
 >plt.ylabel('Day of the Week')
 
 >plt.savefig('heatmap')
 
-># Show the plot
+>## Show the plot
 >plt.show()
 
 >from nltk.corpus import stopwords
@@ -240,31 +225,31 @@ List your group members:
 >nltk.download('stopwords')
 >nltk.download('punkt')
 
-># Assuming 'discussion_subentry_count' is a column in your dataframe
-># We sort the dataframe based on 'discussion_subentry_count' in descending order
+>## Assuming 'discussion_subentry_count' is a column in your dataframe
+>## We sort the dataframe based on 'discussion_subentry_count' in descending order
 >df_discussion_topics_sorted = df_discussion_topics.sort_values(by='discussion_subentry_count', ascending=False)
 
-># Select the top N discussions
+>## Select the top N discussions
 >top_discussions = df_discussion_topics_sorted.head(10)
 
 >stop_words= stopwords.words('english')
 
-># Get the titles of the top discussions
+>## Get the titles of the top discussions
 >top_titles = ' '.join(top_discussions['title'].dropna().values)
 
-># Tokenize and clean the titles as before
+>## Tokenize and clean the titles as before
 >top_tokens = word_tokenize(top_titles)
 >top_words = [word.lower() for word in top_tokens if word.isalpha() and word.lower() not in stop_words]
 
-># Frequency distribution for top words
+>## Frequency distribution for top words
 >top_fdist = FreqDist(top_words)
 >for word, frequency in top_fdist.most_common(10):
 >    print(f'{word}: {frequency}')
 
-># Generate a word cloud image for top discussions
+>## Generate a word cloud image for top discussions
 >top_wordcloud = WordCloud(width=800, height=400, background_color='white').generate(' '.join(top_words))
 
-># Display the word cloud
+>## Display the word cloud
 >plt.figure(figsize=(15, 8))
 >plt.imshow(top_wordcloud, interpolation='bilinear')
 >plt.axis('off')
