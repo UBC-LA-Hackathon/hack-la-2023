@@ -34,25 +34,40 @@ Field | Description | Note
 ---------|---------|---------
 canvas_user_id | Your Canvas user id!
 name | Your name (as it appears in Canvas)
-id | 
-type |
-action |
+id | UUID that is expressed as a URN in the form     “urn:uuid:<UUID>” | Each Caliper Event must be assigned a UUID
+type | String value corresponding to the term corresponding to Event or subtype of Event
+action | Something performed or done to accomplish a purpose | Each Event may only specified one action
 event_time | The time the event occurred (UTC)
 ed_app | The app emitting the event (for this event the ed_app is always the same)
 course_offering_id | The course ID (the format is known as the Global Canvas ID - which includes our institution code 11224000...). The trailing digits should match the course_id in the url like 'https://canvas.ubc.ca/course/1111'
-session_id | 
-statement_type |
-statement_version |
+session_id | This is the unique identifier for each session representing a web application user session
+
+statement_type | It provides a way to classify and understand the nature of statements within a dataset, making it easier to analyse and work with the data.
+
+statement_version | This field is used to track and manage different versions of statements in a dataset.
+
+
 object_id | This is the unique identifer for each object, and should relate to each event__object_extensions_asset_name. | This should act as your join key, where possible to the additional datasets
-membership_role |
-event__object_type |
-event__object_name |
-event__object_extensions_asset_name |
-event__object_extensions_asset_type |
-event__object_extensions_asset_subtype |
-event__object_extensions_entity_id |
-event__object_extensions_http_method |
-event__referrer |
-event__request_id |
-event__request_url |
+membership_role | An ordered collection of organisational roles assigned to the member. | Whenever a subrole is specified, the core context role should also be included
+
+event__object_type |  It is a data element that is used to specify the classification of the object within the context of the event.
+
+event__object_name | It is a data element that represents the name or identifier of an object associated with an event | This field is used to provide a specific, human-readable reference for the object involved in the event.
+
+event__object_extensions_asset_name | Name of the asset from the map of additional attributes (extensions) of the object described in event
+
+event__object_extensions_asset_type | It represents a data type that is associated with an event and is used to describe and categorise the type of assets related to the event.
+
+event__object_extensions_asset_subtype |  It represents a data element associated with an event that further details and subcategories the type of asset related to that event.
+
+event__object_extensions_entity_id | The id of entity (object) within the map of additional attributes of the object described by the event
+
+event__object_extensions_http_method |  a structured way to categorise data elements associated with events and objects, including relevant details and their use with HTTP methods in a system or application 
+
+event__referrer |  An entity that represents the referring context | a referrer value must be expressed either as an object or as a string corresponding to the referrer’s IRI
+
+event__request_id | The field that is associated with an event and is used for tracking and organising events and their corresponding requests, providing a unique identifier for each request associated with a particular event.
+
+event__request_url | the field that is associated with an event and stores the URL (Uniform Resource Locator) related to a specific request within that event | this field would contain the URI that was used to make the request as part of the event.  
+
 
