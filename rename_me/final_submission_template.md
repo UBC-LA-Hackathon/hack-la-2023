@@ -24,49 +24,26 @@ List your group members:
 > Challenges: The datasets are small and not perfect, so it is challenging to clean the data, find connections between datasets, and find insights at the beginning.
 
 
-## Code:
+#Code
 import seaborn as sns
 import matplotlib.pyplot as plt
-
-# Import necessary libraries
 import pandas as pd
 import matplotlib.pyplot as plt
-
-# Load the CSV file into a DataFrame
 df_events = pd.read_csv('./data/events.csv')
-
-# Display the first few rows of the DataFrame
 df_events.head()
-
 df_assignment = pd.read_csv('./data/assignments.csv')
-
 df_discussion_topics= pd.read_csv('./data/discussion_topics.csv')
-
 df_discussion= pd.read_csv('./data/discussions.csv')
 df_enroll= pd.read_csv('./data/enrollments.csv')
 df_file= pd.read_csv('./data/files.csv')
 df_grade= pd.read_csv('./data/gradebook.csv')
 df_module= pd.read_csv('./data/module_items.csv')
 df_page= pd.read_csv('./data/pages.csv')
-
-df_assignment
-
 discussion_topic = df_discussion.value_counts('discussion_topic_title')
-
 df_discussion.sort_values('timestamp',asce)
-
 df_discussion.groupby('discussion_topic_title')['post_message_length'].mean().sort_values(ascending=False)
-
-discussion_topic
-
 df_discussion['timestamp'] = pd.to_datetime(df_discussion['timestamp'],format='mixed')
-
-df_events.dtypes
-
-df_enroll
-
 df_enroll.sort_values('total_activity_time', ascending = False)
-
 def grade(x):
     if x >= 90:
         Grade = 'A+'
@@ -86,10 +63,7 @@ def grade(x):
         Grade = 'D'    
     else:
         Grade = 'F'     
-    return(Grade)        
-        
-
-df_file
+    return(Grade)       
 
 import numpy as np
 
