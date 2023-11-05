@@ -7,7 +7,7 @@ List your group members:
 > Chetan
 
 # This Project
-> Link to presentation: 
+> Link to presentation: https://docs.google.com/presentation/d/1fSk_CGhaLwdAV5hxWAz_D7NnIfIlQhVsgsVawfhJzNo/edit?usp=sharing
 > Give a brief description of the final product: 
 The final product is a dynamic Tableau dashboard that not only displays learner discussion engagement trends but also integrates correlation metrics and timelines of assignment submissions. This enables a multifaceted view of student activity, correlating discussion participation with actual assignment completion, providing educators with insights to optimize teaching strategies and deadlines.
 
